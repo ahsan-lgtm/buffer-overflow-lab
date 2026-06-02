@@ -38,7 +38,7 @@ No external libraries required (uses built-in socket, time, sys).
 
 🚀 Usage
 1. Clone the repository
-https://github.com/ahsan-lgtm/buffer-overflow-fuzzer-lab.git
+git clone https://github.com/ahsan-lgtm/buffer-overflow-fuzzer-lab.git
 
 2. cd buffer-overflow-fuzzer-lab
 
