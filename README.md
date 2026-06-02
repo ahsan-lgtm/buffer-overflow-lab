@@ -40,7 +40,7 @@ No external libraries required (uses built-in socket, time, sys).
 1. Clone the repository
 https://github.com/ahsan-lgtm/buffer-overflow-fuzzer-lab.git
 
-cd buffer-overflow-fuzzer-lab
+2. cd buffer-overflow-fuzzer-lab
 
 3. Run the fuzzer
 python3 fuzzer.py
