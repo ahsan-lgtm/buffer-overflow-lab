@@ -38,10 +38,11 @@ No external libraries required (uses built-in socket, time, sys).
 
 🚀 Usage
 1. Clone the repository
-git clone https://github.com/yourusername/vulnserver-fuzz-suite.git
-cd vulnserver-fuzz-suite
+https://github.com/ahsan-lgtm/buffer-overflow-fuzzer-lab.git
 
-2. Run the fuzzer
+cd buffer-overflow-fuzzer-lab
+
+3. Run the fuzzer
 python3 fuzzer.py
 
 ⚙️ Configuration
