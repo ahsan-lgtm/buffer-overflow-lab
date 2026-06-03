@@ -12,4 +12,4 @@ Verification of control over the instruction pointer
 
 This lab demonstrates the foundational steps of buffer overflow exploitation, including how improper input validation can lead to severe security risks such as arbitrary code execution.
 
-⚠️ This project is strictly for educational and ethical hacking practice in a controlled lab environment.
+This project is strictly for educational and ethical hacking practice in a controlled lab environment.
