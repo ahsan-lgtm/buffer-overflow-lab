@@ -1,74 +1,15 @@
-🧪 Vulnserver Buffer Fuzzer Suite
+This repository documents a Buffer Overflow Exploitation Lab performed on a vulnerable application (VulnServer) in a controlled environment for educational purposes.
 
-A Python-based fuzzing toolkit designed for authorized penetration testing in a controlled lab environment.
-This tool targets the vulnerable Vulnserver application and helps identify buffer overflow crash points in various command handlers.
+The objective of this project is to understand how memory corruption vulnerabilities can be identified and exploited to gain control over program execution flow, ultimately demonstrating how attackers may achieve remote code execution in unsafe software.
 
-⚠️ Disclaimer
+The methodology includes:
 
-This project is strictly for:
+Spiking to identify vulnerable input functions
+Fuzzing to detect crash points in the application
+Payload analysis to determine crash behavior
+Cyclic pattern generation to identify the exact EIP offset
+Verification of control over the instruction pointer
 
-Educational purposes
-Authorized security testing
-Lab environments (e.g., Vulnserver, vulnerable VMs)
+This lab demonstrates the foundational steps of buffer overflow exploitation, including how improper input validation can lead to severe security risks such as arbitrary code execution.
 
-Do NOT use this tool against systems you do not own or have explicit permission to test.
-
-
-📌 Features
-Automated buffer fuzzing against multiple Vulnserver commands
-Crash detection via socket behavior (reset, timeout, disconnect)
-Fine-grained fuzzing around crash points
-Supports key vulnerable commands:
-TRUN .
-GMON /.../
-STATS
-RTIME
-KSTET
-GTER
-HTER
-LTER
-and others
-Massive payload bombardment mode for stress testing
-
-🛠️ Requirements
-Python 3.x
-Network access to target system (Vulnserver VM recommended)
-
-No external libraries required (uses built-in socket, time, sys).
-
-🚀 Usage
-1. Clone the repository
-git clone https://github.com/ahsan-lgtm/buffer-overflow-fuzzer-lab.git
-
-2. cd buffer-overflow-fuzzer-lab
-
-3. Run the fuzzer
-python3 fuzzer.py
-
-⚙️ Configuration
-
-Edit the script to set your target:
-
-TARGET = "192.168.18.108"
-PORT = 9999
-
-🔍 How It Works
-
-The fuzzer:
-
-Connects to the target service via TCP
-
-Sends structured payloads:
-
-COMMAND + "A" * buffer_size
-Observes response behavior:
-Normal response → service alive
-Timeout/reset → possible crash
-Performs:
-Range-based fuzzing
-Fine-grained stepping near crash points
-Multi-command testing
-
-
-
-
+⚠️ This project is strictly for educational and ethical hacking practice in a controlled lab environment.
